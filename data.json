@@ -1,0 +1,101 @@
+{
+  "agents": [
+    {
+      "id": "watcher_price_monitor",
+      "name": "Мониторинг цен",
+      "department": "watcher",
+      "status": "ok",
+      "task": "Сканирование цен конкурентов",
+      "metrics": {
+        "products_scanned": 1250,
+        "price_changes": 23
+      },
+      "last_activity": "2025-01-28T14:35:00"
+    },
+    {
+      "id": "watcher_night_agent",
+      "name": "Ночной агент",
+      "department": "watcher",
+      "status": "ok",
+      "task": null,
+      "metrics": {},
+      "last_activity": "2025-01-28T03:15:00"
+    },
+    {
+      "id": "watcher_competitor_scan",
+      "name": "Сканер конкурентов",
+      "department": "watcher",
+      "status": "warning",
+      "task": "Высокая нагрузка",
+      "metrics": {
+        "queue_size": 145
+      },
+      "last_activity": "2025-01-28T14:40:00"
+    },
+    {
+      "id": "reputation_wb",
+      "name": "WB отзывы",
+      "department": "reputation",
+      "status": "ok",
+      "task": "Обработка отзывов",
+      "metrics": {
+        "reviews_today": 47,
+        "avg_response_min": 12
+      },
+      "last_activity": "2025-01-28T14:38:00"
+    },
+    {
+      "id": "reputation_ozon",
+      "name": "Ozon отзывы",
+      "department": "reputation",
+      "status": "error",
+      "task": "Ошибка: API timeout",
+      "metrics": {
+        "reviews_today": 23
+      },
+      "last_activity": "2025-01-28T14:30:00"
+    },
+    {
+      "id": "cfo_report",
+      "name": "Отчёт P&L",
+      "department": "cfo",
+      "status": "ok",
+      "task": "Формирование отчёта",
+      "metrics": {
+        "reports_generated": 3
+      },
+      "last_activity": "2025-01-28T14:25:00"
+    },
+    {
+      "id": "content_descriptions",
+      "name": "Генератор описаний",
+      "department": "content_factory",
+      "status": "ok",
+      "task": "Генерация описаний товаров",
+      "metrics": {
+        "descriptions_today": 156,
+        "queue_size": 23
+      },
+      "last_activity": "2025-01-28T14:42:00"
+    },
+    {
+      "id": "scout_niche",
+      "name": "Анализ ниш",
+      "department": "scout",
+      "status": "offline",
+      "task": null,
+      "metrics": {},
+      "last_activity": "2025-01-27T23:00:00"
+    }
+  ],
+  "departments": {
+    "watcher": {"name": "Watcher", "color": "#4A90D9"},
+    "reputation": {"name": "Reputation", "color": "#7ED321"},
+    "cfo": {"name": "CFO", "color": "#F5A623"},
+    "content_factory": {"name": "Content Factory", "color": "#F5623A"},
+    "knowledge": {"name": "Knowledge", "color": "#9B59B6"},
+    "marketing": {"name": "Marketing", "color": "#E91E8C"},
+    "scout": {"name": "Scout", "color": "#50E3C2"},
+    "lex": {"name": "Lex", "color": "#7F8C8D"}
+  }
+}
