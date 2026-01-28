@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADOLF Office</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">🏢 ADOLF Office</h1>
+            <div class="header__info">
+                <span class="header__update-time" id="updateTime">Обновлено: --:--</span>
+            </div>
+        </header>
+
+        <main class="office" id="office">
+            <!-- Departments will be rendered here -->
+            <div class="loading" id="loading">
+                <div class="loading__spinner"></div>
+                <p>Загрузка данных...</p>
+            </div>
+        </main>
+
+        <div class="error-message" id="errorMessage" style="display: none;">
+            <p>⚠️ Ошибка загрузки данных. Повторная попытка через 30 секунд...</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal__close" id="modalClose">&times;</button>
+            <div class="modal__content" id="modalContent">
+                <!-- Agent details will be rendered here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
